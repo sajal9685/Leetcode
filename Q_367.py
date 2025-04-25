@@ -1,8 +1,6 @@
-num=16
+num=14
 sqrt=num**0.5
-print(sqrt)
-print(type(sqrt))
-if type(sqrt) ==int:
+if sqrt.is_integer():
     print (True)
 else:
     print (False)  
