@@ -5,7 +5,7 @@
 # 11 --> 1 + 1 --> 2 
 # Since 2 has only one digit, return it.
 num = 38
-while num>10:
+while num>=10:
     sum=0
     st=str(num)
     for i in range(0,len(st)):
