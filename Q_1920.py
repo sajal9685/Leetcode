@@ -6,6 +6,7 @@
 #     = [0,1,2,4,5,3]
 nums = [5,0,1,2,3,4]
 li=[]
+
 for num in nums:
     li.append(nums[num])
 print(li)    
