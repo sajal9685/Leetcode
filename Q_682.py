@@ -7,22 +7,22 @@
 # "D" - Add 2 * 5 = 10 to the record, record is now [5, 10].
 # "+" - Add 5 + 10 = 15 to the record, record is now [5, 10, 15].
 # The total sum is 5 + 10 + 15 = 30.
-ops =["-60","D","-36","30","13","C","C","-33","53","79"]
-li=[]
-ans=0
-for i in range(0,len(ops)):
+ops = ["-60", "D", "-36", "30", "13", "C", "C", "-33", "53", "79"]
+li = []
+ans = 0
+for i in range(0, len(ops)):
     print(li)
-    if ops[i]=="C":
-        li.remove((li[len(li)-1]))
-    elif ops[i]=="D":
-        lent=len(li)-1
-        li.append((int(li[lent])*2))
-    elif ops[i]=="+":
-        lent=len(li)-1
-        sum=int(li[lent])+int(li[lent-1])
+    if ops[i] == "C":
+        li.remove((li[len(li) - 1]))
+    elif ops[i] == "D":
+        lent = len(li) - 1
+        li.append((int(li[lent]) * 2))
+    elif ops[i] == "+":
+        lent = len(li) - 1
+        sum = int(li[lent]) + int(li[lent - 1])
         li.append(sum)
-    else:     
+    else:
         li.append(int(ops[i]))
 for num in li:
-    ans=ans+num
-print(ans)    
+    ans = ans + num
+print(ans)
