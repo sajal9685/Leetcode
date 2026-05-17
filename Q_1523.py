@@ -5,4 +5,7 @@ n=0
 for i in range(low,high+1):
     if i%2!=0:
         n=n+1
-print(n)        
+print(n) 
+
+
+# return (high + 1) // 2 - low // 2
